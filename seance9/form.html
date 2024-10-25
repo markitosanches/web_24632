@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input:not([type="checkbox"],[type="radio"]), select, textarea{
+            display:block;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.html" method="get">
+        <label for="l_name">Nom</label>
+        <input type="text" id="l_name" name="i_nom">
+        
+        <label for="l_email">Courriel</label>
+        <input type="email" id="l_email"  name="i_email">
+
+        <label for="l_pwd">mot de passe</label>
+        <input type="password" id="l_pwd" name="i_password">
+
+        <label for="l_dob">Naissance</label>
+        <input type="date" id="l_dob">
+
+        <label for="l_qte">Quantite</label>
+        <input type="number" id="l_qte" step="0.1">
+
+        <label for="l_age">Age</label>
+        <input type="range" id="l_age" min="18" max="90">
+
+        <fieldset>
+            <legend>Programmation</legend>
+            <label for="l_html">Html</label>
+            <input type="checkbox" id="l_html">
+            <label>
+                CSS<input type="checkbox">
+            </label>
+            <label>
+                PHP<input type="checkbox">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Il fait froid?</legend>
+            <label>
+                Oui<input type="radio" name="froid">
+            </label>
+            <label>
+                Non<input type="radio" name="froid">
+            </label>
+            <label>
+                Je ne sais pas<input type="radio" name="froid">
+            </label>
+        </fieldset>
+        <label for="l_ville">Ville</label>
+        <select id="l_ville">
+            <option value="">Montreal</option>
+            <option value="">Laval</option>
+            <option value="">Quebec</option>
+            <option value="">Ottawa</option>
+        </select>
+        <label for="l_comm">Commentaire</label>
+        <textarea id="l_comm" rows="20" cols="60"></textarea>
+        <input type="submit" value="Save">
+
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
+
+
+form.html?i_nom=Peter&i_email=peter%40gmail.com&i_password=123456
