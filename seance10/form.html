@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input:not([type="checkbox"],[type="radio"]), select, textarea{
+            display:block;
+            margin:5px;
+            width: 300px;
+            padding:5px;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.html" method="get">
+        <label for="l_name">Nom</label>
+        <input type="text" id="l_name" name="i_nom" value="Peter" aria-label="Champ pour le non">
+        
+        <label for="l_email">Courriel</label>
+        <input type="email" id="l_email"  name="i_email" placeholder="Ecrire votre email" required>
+
+        <label for="l_pwd">mot de passe</label>
+        <input type="password" id="l_pwd" name="i_password" minlength="4" maxlength="6">
+
+        <label for="l_dob">Naissance</label>
+        <input type="date" id="l_dob" name="i_naissance">
+
+        <label for="l_qte">Quantite</label>
+        <input type="number" id="l_qte" step="0.1" name="i_age">
+
+        <label for="l_age">Age</label>
+        <input type="range" id="l_age" min="18" max="90" name="i_range">
+
+        <fieldset>
+            <legend>Programmation</legend>
+            <label for="l_html">Html</label>
+            <input type="checkbox" id="l_html" name="i_html" value="1" checked>
+            <input type="hidden" name="i_css" value="0">
+            <label>
+                CSS<input type="checkbox" name="i_css" value="1">
+            </label>
+            <label>
+                PHP<input type="checkbox" name="i_php" value="1">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Il fait froid?</legend>
+            <label>
+                Oui<input type="radio" name="froid" value="oui" checked>
+            </label>
+            <label>
+                Non<input type="radio" name="froid" value="non" >
+            </label>
+            <label>
+                Je ne sais pas<input type="radio" name="froid" value="peutetre">
+            </label>
+        </fieldset>
+        <label for="l_ville">Ville</label>
+        <select id="l_ville" name="i_ville">
+            <option value="1">Montréal</option>
+            <option value="2">Laval</option>
+            <option value="3" selected>Ville de Quebec</option>
+            <option value="4">Ottawa</option>
+        </select>
+        <label for="g_ville">Groupe Ville</label>
+        <select name="ville_group" id="g_ville">
+            <optgroup label="Quebec">
+                <option value="1">Montréal</option>
+                <option value="2">Laval</option>
+                <option value="3" selected>Ville de Quebec</option>
+            </optgroup>
+            <optgroup label="Ontario">
+                <option value="4">Ottawa</option>
+                <option value="5">Toronto</option>
+            </optgroup>
+        </select>
+        <label for="l_comm">Commentaire</label>
+        <textarea id="l_comm" rows="20" cols="60" name="i_commentaire">C'est la valeur</textarea>
+        <input type="submit" value="Save">
+
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
+
+form.html?
+i_nom=Peter&
+i_email=peter%40gmail.com&
+i_password=123456&
+i_naissance=2024-10-01&
+=2&
+=76&
+i_html=on
+&i_php=on
+&froid=on     froid=on
+&i_ville=
+&i_commentaire=lkajlkajlk+%3Bllk%3Bak

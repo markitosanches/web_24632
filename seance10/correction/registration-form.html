@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription client</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        label{
+            margin: 10px;
+            
+        }
+        input:not([type="checkbox"],[type="radio"]), select, textarea{
+            display:block;
+            margin: 10px;
+        }
+        fieldset{
+            background-color: gray;
+            padding: 15px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form  method="get">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom">
+        <br>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom">
+        <br>
+        <label for="c_email">Courriel</label>
+        <input type="email" name="c_email" id="c_email">
+        <br>
+        <label for="date_anniverasaire">Date de naissance</label>
+        <input type="date" id="date_anniverasaire" name="date_anniverasaire">
+        <br>
+
+        <fieldset>
+            <legend>Type d'Abonnement</legend>
+            <label>natation
+                <input type="checkbox" name="natation">
+            </label>
+            <label>fitness
+                <input type="checkbox" name="fitness">
+            </label>
+            <label>tennis
+                <input type="checkbox" name="tennis">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Sexe</legend>
+        <label>Masculin
+            <input type="radio" name="sexe">
+        </label>
+        <label>Féminin
+            <input type="radio" name="sexe">
+        </label>
+        <label>Autre
+            <input type="radio" name="sexe3">
+        </label>
+        </fieldset>
+        <label for="comment">Commentaire</label>
+        <textarea id="comment" rows="3" cols="30" name="comment"></textarea>
+        <br>
+        <label for="ville"></label>
+        <select name="ville" id="ville">
+            <option value="">Montreal</option>
+            <option value="">Quebec</option>
+            <option value="">Laval</option>
+        </select>
+
+        <input type="submit" value="save">
+    </form> 
+</body>
+</html>

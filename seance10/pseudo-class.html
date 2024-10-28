@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+        nav  a{
+            padding: 20px;
+            text-decoration: none;
+            color:darkgoldenrod;
+        }
+        nav a:hover{
+            color: antiquewhite;
+            background-color: darkgoldenrod;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            background-color: aqua;
+        }
+
+        p:first-child{
+            background-color: pink;
+        }
+        p:last-child{
+            background-color: yellow;
+        }
+        /* li:nth-of-type(2){
+            color: violet
+        } */
+        /* li:nth-of-type(3n){
+            color: violet
+        } */
+        li:nth-of-type(odd){
+            color: violet
+        }
+        input:focus{
+            box-shadow: 0 0 10px blue; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="#">Page 3</a>
+        <a href="#">Page 4</a>
+    </nav>
+    <a href="selecteur.html">Test a</a>
+    <a href="form.html">Test b</a>
+    <div>
+        <p>lorem 1 (first)</p>
+        <p>lorem 2</p>
+        <p>lorem 3</p>
+        <p>lorem 4
+            <div>
+                <p>lorem 4.1 (first)</p>
+                <p>lorem 4.2</p>
+                <p>lorem 4.3 (last)</p>
+            </div>
+        </p>
+        <p>lorem 5 (last)</p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+    <input type="text" name="" id="">
+</body>
+</html>
