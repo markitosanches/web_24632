@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        /* :root{
+            font-size: 24px
+        } */
+        html{
+            font-size: 12px;
+        }
+        body{
+            font-size: 16px;
+        }
+        .box{
+            font-size: 12px;
+            background-color: antiquewhite;
+            padding: 2em;
+        }
+
+        .em{
+            font-size: 1.5em;
+        }
+
+        .box-rem{
+            font-size: 26px;
+            background-color: antiquewhite;
+            padding: 1rem;
+        }
+
+        .rem{
+            font-size: 2rem;
+        }
+        .box-pourcentage{
+            width: 50%;
+            background-color: red;
+        }
+
+        .box-2{
+            margin-top: 10px;
+            width: 800px;
+        }
+
+        .box-vw{
+            background-color: blue;
+            width: 50vw;
+        }
+        .text-vw{
+            font-size: 2vw;
+        }
+        .text-vh{
+            font-size: 5vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unités</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Relative</h2>
+            <section>
+                <h3>em</h3>
+                <div class="box">em</div>
+                <ul>
+                    <li>Item 1 (16px)</li>
+                    <li>Item 2 (16px)</li>
+                    <li class="em">Item 3 (16px * 1.5 = 24px)
+                        <ul>
+                            <li>Item 3.1</li>
+                            <li>Item 3.2</li>
+                            <li class="em">Item 3.3 (16px * 1.5 = 24px * 1.5px = 36px)
+                                <ul>
+                                    <li>item 3.3.1</li>
+                                    <li class="em">item 3.3.2 Item 3.3 (16px * 1.5 = 24px * 1.5px = 36px * 1.5 = 54px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Rem R(root - Racine)</h3>
+                <div class="box-rem">rem</div>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li class="rem">Item C
+                        <ul>
+                            <li>Item C.A</li>
+                            <li>Item C.C</li>
+                            <li class="rem">Item C.C
+                                <ul>
+                                    <li>Item C.C.A</li>
+                                    <li class="rem">Item C.C.B</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Pourcentage</h3>
+                <div class="box-pourcentage">% box-pourcentage</div>
+                <div class="box-2">
+                    <div class="box-pourcentage">% box-pourcentage</div>
+                </div>
+            </section>
+            <section>
+                <h3>Viewport Width</h3>
+                <div class="box-vw">% box-Viewport Width</div>
+                <div class="box-2">
+                    <div class="box-vw">% box-Viewport Width</div>
+                </div>
+                <div class="text-vw">
+                    Font size avec VW
+                </div>
+            </section>
+            <section>
+                <h3>Viewport Height</h3>
+                <div class="text-vh">
+                    Font-size Height avec VH    
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
