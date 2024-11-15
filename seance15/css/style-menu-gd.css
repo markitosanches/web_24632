@@ -1,0 +1,23 @@
+nav{
+    background-color: #064e9a;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    overflow: auto;
+}
+nav > a {
+    color: #ecf5f9;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav > a:hover{
+    background-color: white;
+    color: #064e9a;
+    transition-duration: .5s;
+}
+main{
+    margin-left: 200px;
+    padding: 1em;
+}

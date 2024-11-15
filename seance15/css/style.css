@@ -1,0 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap'); */
+@import 'style-p.css';
+
+@font-face {
+    font-family: "Edu AU VIC WA NT Pre";
+    src: url('../fonts/EduAUVICWANTPre-Regular.ttf');
+}
+
+
+body{
+    background-color: antiquewhite;
+}
+

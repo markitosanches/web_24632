@@ -1,0 +1,9 @@
+@import url('style-menu-gd.css');
+@import url('style-menu-800.css') screen and (max-width:800px);
+@import url('style-menu-600.css') screen and (max-width:600px);
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ecf5f9;
+    margin:0;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ecf5f9;
+            margin:0;
+        }
+        nav{
+            background-color: #064e9a;
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            overflow: auto;
+        }
+        nav > a {
+            color: #ecf5f9;
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav > a:hover{
+            background-color: white;
+            color: #064e9a;
+            transition-duration: .5s;
+        }
+        main{
+            margin-left: 200px;
+            padding: 1em;
+        }
+        @media screen and (max-width:800px){
+            nav{
+                height: auto;
+                width: 100%;
+                position: static;
+            }
+            nav > a {
+                display: inline-block;
+            }
+            main{
+                margin-left: auto;
+            }
+            .right{
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav role="menu">
+        <a href="#" role="menuitem">Home</a>
+        <a href="#" role="menuitem">About</a>
+        <a href="#" role="menuitem">Service</a>
+        <a href="#" role="menuitem">Contact</a>
+        <a href="#" class="right" role="menuitem">FAQ</a>
+    </nav>
+    <main>
+        Side Bar
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum aspernatur quae quis fugiat debitis. Temporibus, possimus culpa corporis pariatur voluptas perspiciatis molestiae repudiandae minus! Magnam aliquam explicabo molestiae ratione?</p>
+    </main>
+    
+</body>
+</html>

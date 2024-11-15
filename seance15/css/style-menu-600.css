@@ -1,0 +1,10 @@
+nav{
+    border-bottom: 1px solid #064e9a;
+}
+nav  > a {
+    display: block;
+    text-align: center;
+}
+.right{
+    float: none;
+}

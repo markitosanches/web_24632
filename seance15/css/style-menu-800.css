@@ -1,0 +1,14 @@
+nav{
+    height: auto;
+    width: 100%;
+    position: static;
+}
+nav > a {
+    display: inline-block;
+}
+main{
+    margin-left: auto;
+}
+.right{
+    float: right;
+}
