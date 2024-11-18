@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Justify</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            flex-flow: row wrap;
+            background-color:  lightblue;
+            justify-content:  space-between;
+        }
+        nav > div{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 1em;
+        }
+        @media screen and (max-width: 600px){
+            nav, nav >div{
+                flex-flow: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Services</a>
+            <a href="#">Services</a>
+        </div>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>

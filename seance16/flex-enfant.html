@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Enfant</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-flow: row;
+        }
+        .flex-container > div{
+            padding: 1em;
+            color: white;
+        }
+        .red{
+            background-color: red;
+            /* order: 1 */
+            /* flex-grow: 1; */
+            flex: 1;
+        }
+        .green{
+            background-color: green;
+            /* flex-basis: 800px;
+            flex-shrink: 0;
+            flex-grow: 1; */
+            /* flex: 1 0 800px; */
+            /* order: 0 */
+        }
+        .blue{
+            background-color: blue;
+            /* order: 1; */
+            /* flex: 2; */
+            flex: 600px;
+            /* flex: 1 1 600px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        
+        <div class="red">1</div>
+        <div class="green">2 </div>
+        <div class="blue">3</div>
+    </div>
+    
+</body>
+</html>
