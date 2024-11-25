@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+   }
+   .container{
+       display: flex;
+       flex-flow:row;
+       min-height: 100vh;
+   }
+   nav{
+       background-color: lightblue;
+       padding: 2em;
+       display: flex;
+       flex-flow: column;
+       flex: 0 0200px;
+   }
+   nav a {
+       padding: 1em;
+   }
+   main{
+       flex:3;
+   }
+   aside{
+       background-color: lightblue;
+       flex:1;
+
+   }
+   @media screen and (max-width: 800px){
+       /* aside{
+           display: none;
+       } */
+
+       main{
+           order:1;
+       }
+   }
+   @media screen and (max-width: 600px){
+       .container{
+           flex-flow: column;
+       }
+       nav{
+           flex-flow: row;
+           padding:0;
+           flex: 0 0 50px;
+       }
+       .none{
+           display: none;
+       }
+   }
