@@ -64,15 +64,21 @@
             background-color: #f0f0f0;
             border-radius: 5px;
             padding: 1em;
-            flex: 1;
+            flex: 0 0 400px;
             text-align: center;
-            /* max-width: 400px; */
+             /* max-width: 400px; */
         }
 
         main > section.card-2{
             flex:2
         }
 
+        .img-box{
+            max-width: 350px;
+        }
+        .img-box > img{
+            width: 100%;
+        }
         @media screen and (max-width:600px){
             nav, nav ul, main {
                 flex-flow: column nowrap;
@@ -96,22 +102,30 @@
         <main>
             <section>
                 <h3>Card 1</h3>
-                <img src="https://placehold.co/350x150" alt="Imager placeholder">
-                <p>It is a card</p>
-            </section>
-            <section class="card-2">
-                <h3>Card 2</h3>
-                <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                    <div class="img-box">
+                        <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                    </div>
                 <p>It is a card</p>
             </section>
             <section>
-                <h3>Card 3</h3>
-                <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                <h3>Card 1</h3>
+                    <div class="img-box">
+                        <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                    </div>
                 <p>It is a card</p>
             </section>
             <section>
-                <h3>Card 4</h3>
-                <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                <h3>Card 1</h3>
+                    <div class="img-box">
+                        <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                    </div>
+                <p>It is a card</p>
+            </section>
+            <section>
+                <h3>Card 1</h3>
+                    <div class="img-box">
+                        <img src="https://placehold.co/350x150" alt="Imager placeholder">
+                    </div>
                 <p>It is a card</p>
             </section>
         </main>

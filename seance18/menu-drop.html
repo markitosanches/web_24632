@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Drop</title>
+<link rel="stylesheet" href="css/style-menu-drop.css">
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <ul role="menubar">
+            <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Home">Home</a></li>
+            <li role="menuitem"  aria-haspopup="false"><a href="#" aria-label="Menu About">About</a></li>
+            <li role="menu"  aria-haspopup="true">
+                <a href="#" aria-label="Menu Services">Service</a>
+                <ul class="dropdown-1">
+                    <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Service 1">Service 1</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Service 2">Service 2</a></li>
+                    <li role="menu" aria-haspopup="true">
+                        <a href="#" aria-label="Menu Service 3">Service 3</a>
+                        <ul class="dropdown-2">
+                            <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Service 3.1">Service 3.1</a></li>
+                            <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Service 3.2">Service 3.2</a></li>
+                            <li role="menuitem" aria-haspopup="false"><a href="#" aria-label="Menu Service 3.3">Service 3.3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li role="menuitem"  aria-haspopup="false"><a href="#" aria-label="Menu Contact">Contact</a></li>
+            <li role="menuitem"  aria-haspopup="false"><a href="#" aria-label="Menu FAQ">FAQ</a></li>    
+        </ul>
+    </nav>
+</body>
+</html>
